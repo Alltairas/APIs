@@ -1,0 +1,104 @@
+NOM,NUMÉRO,REGION,CHEF LIEU,SUPERFICIE (km²),POPULATION,DENSITE (habitants/km2)
+Ain,1,Auvergne-Rhône-Alpes,Bourg-en-Bresse,"5,762","631,877",109.7
+Aisne,2,Hauts-de-France,Laon,"7,369","538,659",73.1
+Allier,3,Auvergne-Rhône-Alpes,Moulins,"7,340","341,613",46.5
+Alpes-de-Haute-Provence,4,Provence-Alpes-Côte d'Azur,Digne,"6,925","161,799",23.4
+Hautes-Alpes,5,Provence-Alpes-Côte d'Azur,Gap,"5,549","140,916",25.4
+Alpes-Maritimes,6,Provence-Alpes-Côte d'Azur,Nice,"4,299","1,082,440",251.8
+Ardèche,7,Auvergne-Rhône-Alpes,Privas,"5,529","324,209",58.6
+Ardennes,8,Grand Est,Charleville-Mézières,"5,229","277,752",53.1
+Ariège,9,Occitanie,Foix,"4,890","152,499",31.2
+Aube,10,Grand Est,Troyes,"6,004","309,056",51.5
+Aude,11,Occitanie,Carcassonne,"6,139","366,957",59.8
+Aveyron,12,Occitanie,Rodez,"8,735","279,169",32
+Bouches-du-Rhône,13,Provence-Alpes-Côte d'Azur,Marseille,"5,088","2,016,622",396.4
+Calvados,14,Normandie,Caen,"5,548","693,579",125
+Cantal,15,Auvergne-Rhône-Alpes,Aurillac,"5,726","146,219",25.5
+Charente,16,Nouvelle-Aquitaine,Angoulême,"5,956","353,613",59.4
+Charente-Maritime,17,Nouvelle-Aquitaine,La Rochelle,"6,864","639,938",93.2
+Cher,18,Centre-Val de Loire,Bourges,"7,235","308,992",42.7
+Corrèze,19,Nouvelle-Aquitaine,Tulle,"5,857","241,871",41.3
+Corse-du-Sud,2A,Corse,Ajaccio,"4,014","152,730",38
+Haute-Corse,2B,Corse,Bastia,"4,666","174,553",37.4
+Côte-d'Or,21,Bourgogne-Franche-Comté,Dijon,"8,763","533,147",60.8
+Côtes-d'Armor,22,Bretagne,Saint-Brieuc,"6,878","598,357",87
+Creuse,23,Nouvelle-Aquitaine,Guéret,"5,565","120,365",21.6
+Dordogne,24,Nouvelle-Aquitaine,Périgueux,"9,060","415,417",45.9
+Doubs,25,Bourgogne-Franche-Comté,Besançon,"5,233","536,959",102.6
+Drôme,26,Auvergne-Rhône-Alpes,Valence,"6,530","504,637",77.3
+Eure,27,Normandie,Évreux,"6,040","601,948",99.7
+Eure-et-Loir,28,Centre-Val de Loire,Chartres,"5,880","434,035",73.8
+Finistère,29,Bretagne,Quimper,"6,733","907,796",134.8
+Gard,30,Occitanie,Nîmes,"5,853","738,189",126.1
+Haute-Garonne,31,Occitanie,Toulouse,"6,309","1,335,103",211.6
+Gers,32,Occitanie,Auch,"6,257","190,932",30.5
+Gironde,33,Nouvelle-Aquitaine,Bordeaux,"9,976","1,548,478",155.2
+Hérault,34,Occitanie,Montpellier,"6,101","1,120,190",183.6
+Ille-et-Vilaine,35,Bretagne,Rennes,"6,775","1,042,884",153.9
+Indre,36,Centre-Val de Loire,Châteauroux,"6,791","224,200",33
+Indre-et-Loire,37,Centre-Val de Loire,Tours,"6,127","604,966",98.7
+Isère,38,Auvergne-Rhône-Alpes,Grenoble,"7,432","1,251,060",168.3
+Jura,39,Bourgogne-Franche-Comté,Lons-le-Saunier,"4,999","260,587",52.1
+Landes,40,Nouvelle-Aquitaine,Mont-de-Marsan,"9,243","403,234",43.6
+Loir-et-Cher,41,Centre-Val de Loire,Blois,"6,343","333,050",52.5
+Loire,42,Auvergne-Rhône-Alpes,Saint-Étienne,"4,781","759,411",158.9
+Haute-Loire,43,Auvergne-Rhône-Alpes,Le Puy-en-Velay,"4,977","227,034",45.6
+Loire-Atlantique,44,Pays de la Loire,Nantes,"6,809","1,365,227",200.5
+Loiret,45,Centre-Val de Loire,Orléans,"6,775","673,349",99.4
+Lot,46,Occitanie,Cahors,"5,217","173,400",33.2
+Lot-et-Garonne,47,Nouvelle-Aquitaine,Agen,"5,361","333,417",62.2
+Lozère,48,Occitanie,Mende,"5,167","76,309",14.8
+Maine-et-Loire,49,Pays de la Loire,Angers,"7,172","810,186",113
+Manche,50,Normandie,Saint-Lô,"5,938","499,287",84.1
+Marne,51,Grand Est,Châlons-en-Champagne,"8,162","572,293",70.1
+Haute-Marne,52,Grand Est,Chaumont,"6,211","179,154",28.8
+Mayenne,53,Pays de la Loire,Laval,"5,175","307,940",59.5
+Meurthe-et-Moselle,54,Grand Est,Nancy,"5,246","734,403",140
+Meuse,55,Grand Est,Bar-le-Duc,"6,211","190,626",30.7
+Morbihan,56,Bretagne,Vannes,"6,823","744,813",109.2
+Moselle,57,Grand Est,Metz,"6,216","1,044,486",168
+Nièvre,58,Bourgogne-Franche-Comté,Nevers,"6,817","211,747",31.1
+Nord,59,Hauts-de-France,Lille,"5,743","2,605,238",453.7
+Oise,60,Hauts-de-France,Beauvais,"5,860","821,552",140.2
+Orne,61,Normandie,Alençon,"6,103","286,618",47
+Pas-de-Calais,62,Hauts-de-France,Arras,"6,671","1,472,648",220.7
+Puy-de-Dôme,63,Auvergne-Rhône-Alpes,Clermont-Ferrand,"7,970","647,501",81.2
+Pyrénées-Atlantiques,64,Nouvelle-Aquitaine,Pau,"7,645","670,032",87.6
+Hautes-Pyrénées,65,Occitanie,Tarbes,"4,464","228,582",51.2
+Pyrénées-Orientales,66,Occitanie,Perpignan,"4,116","471,038",114.4
+Bas-Rhin,67,Grand Est,Strasbourg,"4,755","1,116,658",234.8
+Haut-Rhin,68,Grand Est,Colmar,"3,525","762,607",216.3
+Rhône,69,Auvergne-Rhône-Alpes,Lyon,"3,249","1,821,995",560.8
+Haute-Saône,70,Bourgogne-Franche-Comté,Vesoul,"5,360","237,706",44.3
+Saône-et-Loire,71,Bourgogne-Franche-Comté,Mâcon,"8,575","555,408",64.8
+Sarthe,72,Pays de la Loire,Le Mans,"6,206","568,445",91.6
+Savoie,73,Auvergne-Rhône-Alpes,Chambéry,"6,028","428,204",71
+Haute-Savoie,74,Auvergne-Rhône-Alpes,Annecy,"4,388","793,938",180.9
+Paris,75,Ile-de-France,Paris,105,"2,206,488",20934.4
+Seine-Maritime,76,Normandie,Rouen,"6,278","1,257,699",200.3
+Seine-et-Marne,77,Ile-de-France,Melun,"5,915","1,390,121",235
+Yvelines,78,Ile-de-France,Versailles,"2,284","1,427,291",624.8
+Deux-Sèvres,79,Nouvelle-Aquitaine,Niort,"5,999","374,435",62.4
+Somme,80,Hauts-de-France,Amiens,"6,170","571,879",92.7
+Tarn,81,Occitanie,Albi,"5,758","386,543",67.1
+Tarn-et-Garonne,82,Occitanie,Montauban,"3,718","255,274",68.7
+Var,83,Provence-Alpes-Côte d'Azur,Toulon,"5,973","1,048,652",175.6
+Vaucluse,84,Provence-Alpes-Côte d'Azur,Avignon,"3,567","557,548",156.3
+Vendée,85,Pays de la Loire,La Roche-sur-Yon,"6,720","666,714",99.2
+Vienne,86,Nouvelle-Aquitaine,Poitiers,"6,990","434,887",62.2
+Haute-Vienne,87,Nouvelle-Aquitaine,Limoges,"5,520","375,795",68.1
+Vosges,88,Grand Est,Épinal,"5,874","372,016",63.3
+Yonne,89,Bourgogne-Franche-Comté,Auxerre,"7,427","340,903",45.9
+Territoire de Belfort,90,Bourgogne-Franche-Comté,Belfort,609,"144,483",237.1
+Essonne,91,Ile-de-France,Évry,"1,804","1,276,233",707.3
+Hauts-de-Seine,92,Ile-de-France,Nanterre,176,"1,601,569",9120.6
+Seine-St-Denis,93,Ile-de-France,Bobigny,236,"1,592,663",6742.9
+Val-de-Marne,94,Ile-de-France,Créteil,245,"1,372,389",5601.6
+Val-D'Oise,95,Ile-de-France,Pontoise,"1,246","1,215,390",975.5
+Guadeloupe,971,Guadeloupe,Basse-Terre,"1,628","397,990",244.4
+Martinique,972,Martinique,Fort-de-France,"1,128","380,877",337.7
+Guyane,973,Guyane,Cayenne,"83,534","259,865",3.1
+La Réunion,974,La Réunion,Saint-Denis,"2,504","850,727",339.8
+Mayotte,976,Mayotte,Dzaoudzi,376,"256,518",682.2
+,,,,,,
+,fichier téléchargé depuis le site regions-et-departements.fr,,,,,
