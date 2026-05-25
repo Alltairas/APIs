@@ -1,0 +1,7 @@
+.venv/
+.ipynb_checkpoints/
+movie_seanses/.env
+movie_seanses/*.log
+movie_seanses/matches.json
+movie_seanses/__pycache__/
+weather_map/api_key.txt

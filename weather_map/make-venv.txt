@@ -1,0 +1,17 @@
+# 1. Create a venv inside your project folder
+cd /home/aras/APIs
+python3 -m venv .venv
+
+# 2. Activate it
+source .venv/bin/activate
+
+# 3. Install Jupyter + the packages your notebooks use
+pip install jupyter numpy pandas plotly
+
+# 4. Register it as a kernel (so VSCode/Jupyter can find it)
+pip install ipykernel
+python -m ipykernel install --user --name=apis-env --display-name "Python (APIs)"
+
+# 5. Launch Jupyter (optional, if not using VSCode)
+jupyter notebook
+ 
