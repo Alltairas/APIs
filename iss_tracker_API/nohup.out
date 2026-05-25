@@ -1,0 +1,160 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/TP3/app.py", line 2, in <module>
+    import folium
+  File "/home/ubuntu/TP3/myenv/lib/python3.10/site-packages/folium/__init__.py", line 15, in <module>
+    from folium.features import (
+  File "/home/ubuntu/TP3/myenv/lib/python3.10/site-packages/folium/features.py", line 24, in <module>
+    import requests
+  File "/home/ubuntu/TP3/myenv/lib/python3.10/site-packages/requests/__init__.py", line 164, in <module>
+    from .api import delete, get, head, options, patch, post, put, request
+  File "/home/ubuntu/TP3/myenv/lib/python3.10/site-packages/requests/api.py", line 11, in <module>
+    from . import sessions
+  File "/home/ubuntu/TP3/myenv/lib/python3.10/site-packages/requests/sessions.py", line 15, in <module>
+    from .adapters import HTTPAdapter
+  File "/home/ubuntu/TP3/myenv/lib/python3.10/site-packages/requests/adapters.py", line 59, in <module>
+    from urllib3.contrib.socks import SOCKSProxyManager
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 975, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_data
+KeyboardInterrupt
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.239.55:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 319-388-694
+172.29.64.149 - - [17/Feb/2026 00:02:47] "GET / HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:48] "GET /trace_feed?_=1771282968932 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:48] "GET /data?_=1771282968930 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:51] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:53] "GET /trace_feed?_=1771282973933 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:53] "GET /data?_=1771282973932 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:56] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:58] "GET /trace_feed?_=1771282978941 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:02:58] "GET /data?_=1771282978941 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:01] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:03] "GET /trace_feed?_=1771282983938 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:03] "GET /data?_=1771282983931 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:06] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:08] "GET /trace_feed?_=1771282988932 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:08] "GET /data?_=1771282988932 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:11] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:13] "GET /trace_feed?_=1771282993933 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:13] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:16] "GET /data?_=1771282993931 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:18] "GET /trace_feed?_=1771282998933 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:19] "POST /reset_trace HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:21] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:03:21] "GET /data?_=1771282998932 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:49] "GET / HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:49] "GET /trace_feed?_=1771283150005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:49] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:50] "GET /data?_=1771283150004 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:54] "GET /trace_feed?_=1771283155009 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:54] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:54] "GET /data?_=1771283155008 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:05:59] "GET /trace_feed?_=1771283160005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:00] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:02] "GET /data?_=1771283160004 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:04] "GET /trace_feed?_=1771283165006 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:07] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:07] "GET /data?_=1771283165005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:09] "GET /trace_feed?_=1771283170012 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:09] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:09] "GET /data?_=1771283170011 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:12] "GET /astronauts HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:12] "GET /static/images/astro1.jpg HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:12] "GET /static/images/astro2.jpg HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:12] "GET /static/images/cupola.jpg HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:12] "GET /static/images/astro3.jpg HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:12] "GET /static/images/astro4.jpg HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:14] "GET /trace_feed?_=1771283175007 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:14] "GET /data?_=1771283175006 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:17] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:19] "GET /trace_feed?_=1771283180005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:19] "GET /data?_=1771283180005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:22] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:24] "GET /trace_feed?_=1771283185011 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:24] "GET /data?_=1771283185010 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:26] "GET / HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:26] "GET /trace_feed?_=1771283187836 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:27] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:27] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:28] "GET /data?_=1771283187836 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:29] "GET /trace_feed?_=1771283190014 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:29] "GET /data?_=1771283190013 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:30] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:32] "GET /trace_feed?_=1771283192840 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:32] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:32] "POST /reset_trace HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:34] "GET /trace_feed?_=1771283195006 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:34] "GET /data?_=1771283195004 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:34] "GET /data?_=1771283192840 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:35] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:39] "GET /trace_feed?_=1771283200010 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:39] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:39] "GET /data?_=1771283200009 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:44] "GET /trace_feed?_=1771283205008 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:44] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:47] "GET /data?_=1771283205007 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:49] "GET /trace_feed?_=1771283210005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:49] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:52] "GET /data?_=1771283210005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:54] "GET /trace_feed?_=1771283215021 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:54] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:57] "GET /data?_=1771283215005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:59] "GET /trace_feed?_=1771283220017 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:06:59] "GET /data?_=1771283220016 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:00] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:04] "GET /trace_feed?_=1771283225020 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:04] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:07] "GET /data?_=1771283225020 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:09] "GET /trace_feed?_=1771283230013 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:09] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:09] "GET /data?_=1771283230012 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:14] "GET /trace_feed?_=1771283235019 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:14] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:15] "GET /data?_=1771283235019 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:19] "GET /trace_feed?_=1771283240021 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:19] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:22] "GET /data?_=1771283240005 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:24] "GET /trace_feed?_=1771283245008 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:24] "GET /data?_=1771283245008 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:27] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:29] "GET /trace_feed?_=1771283250013 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:29] "GET /data?_=1771283250013 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:32] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:34] "GET /trace_feed?_=1771283255019 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:34] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:34] "GET /data?_=1771283255018 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:39] "GET /trace_feed?_=1771283260007 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:39] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:39] "GET /data?_=1771283260007 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:44] "GET /trace_feed?_=1771283265009 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:44] "GET /data?_=1771283265009 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:46] "POST /reset_trace HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:47] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:51] "GET / HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:51] "GET /trace_feed?_=1771283272106 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:54] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:54] "GET /data?_=1771283272104 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:56] "GET /trace_feed?_=1771283277384 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:56] "GET /data?_=1771283277383 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:07:56] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:01] "GET /trace_feed?_=1771283282379 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:04] "GET /data?_=1771283282379 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:04] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:06] "GET /trace_feed?_=1771283287375 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:06] "GET /data?_=1771283287374 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:06] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:11] "GET /trace_feed?_=1771283292380 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:11] "GET /data?_=1771283292379 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:11] "GET /telemetry HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:16] "GET /trace_feed?_=1771283297383 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:16] "GET /data?_=1771283297383 HTTP/1.1" 200 -
+172.29.64.149 - - [17/Feb/2026 00:08:16] "GET /telemetry HTTP/1.1" 200 -

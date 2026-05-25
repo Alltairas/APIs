@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Astronauts on ISS</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            padding: 0; 
+	    background: url("{{ url_for('static', filename='images/cupola.jpg') }}") no-repeat center center fixed; 
+            background-size: cover;
+	    margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            max-width: 450px; 
+            width: 90%;
+        }
+        h1 { margin-top: 0; color: #333; text-align: center; }
+        ul { list-style: none; padding: 0; }
+        li { 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            padding: 15px 0; 
+            border-bottom: 1px solid #eee; 
+        }
+        li:last-child { border-bottom: none; }
+        img { 
+            width: 60px; height: 60px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #ddd;
+	    transition: transform 0.3s ease, border-color 0.3s ease; /* make the images hoverable: a transition to the base image to make the zoom smooth*/
+        }
+	img:hover {
+        transform: scale(1.2); /* Enlarges by 20% */
+        border-color: #007bff; /* Optional: changes border color to match your button */
+        z-index: 10;           /* Ensures it stays on top of other elements */
+    	cursor: pointer;
+        }
+        .name { font-weight: bold; font-size: 1.1em; display: block; }
+        .role { color: #666; font-size: 0.9em; }
+        
+        /* Standard link styling for navigation */
+        .back-link { 
+            display: block; 
+            margin-top: 25px; 
+            text-decoration: none; 
+            color: white; 
+            background: #007bff; 
+            padding: 12px; 
+            text-align: center; 
+            border-radius: 5px; 
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .back-link:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>👩‍🚀 Crew-12 Residents: {{ count }}</h1>
+        <ul>
+            {% for person in people %}
+            <li>
+                <img src="{{ url_for('static', filename='images/' + person.image_file) }}" alt="{{ person.name }}">
+                <div>
+                    <span class="name">{{ person.name }}</span>
+                    <span class="role">{{ person.role }}</span>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="back-link" onclick="window.location.href='/'; return false;">
+    		← Back to Live Tracking
+	</a>
+    </div>
+</body>
+</html>

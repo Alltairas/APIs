@@ -5,3 +5,4 @@ movie_seanses/*.log
 movie_seanses/matches.json
 movie_seanses/__pycache__/
 weather_map/api_key.txt
+iss_tracker_API/myenv/*

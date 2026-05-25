@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISS Tracker - Live</title>
+    <style>
+	* { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; 
+		margin: 0; background: #1a1a1a; color: white; overflow: hidden; 
+		height: 100vh;position:relative}
+        
+        /* 2. Map: Acts as the full-screen background wallpaper */
+    	.map-container {
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        	z-index: 1; /* Sits behind everything */
+    	}
+        
+        /* Floating instruction box above the map */
+        .instruction-box {
+            position: absolute; 
+            top: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 999; 
+            background: rgba(0, 0, 0, 0.8); 
+            padding: 10px 25px; 
+            border-radius: 30px; 
+            pointer-events: none; /* Allows clicking through the box if needed */
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border: 1px solid #444;
+        }
+
+        /* 3. Dashboard: Floating Banner Configuration */
+    .dashboard {
+        position: absolute;
+        bottom: 5%;              /* The "5% shift upwards" you requested */
+        left: 0;
+        width: 100%;             /* Full banner width */
+        height: 20vh;            /* Reasonable height for stats */
+        
+        /* Transparency: 0.85 alpha = 85% opacity (visible) / 15% transparent */
+        background: rgba(34, 34, 34, 0.85); 
+        	
+        border-top: 3px solid rgba(68, 68, 68, 0.85);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;           /* Sits firmly ON TOP of the map */
+        backdrop-filter: blur(5px); /* Optional: makes text readable over map lines */
+    	}
+        .stat { text-align: center; }
+        .value { display: block; font-size: 2.5em; color: #00d4ff; font-weight: bold; }
+        .label { font-size: 0.9em; text-transform: uppercase; color: #888; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <div class="map-container">
+        <div class="instruction-box">Click on the "Mission" button in the bottom dashboard to see the crew !</div>  
+        {{ map_div|safe }}
+    </div>
+
+    <div class="dashboard">
+        <div class="stat">
+            <span class="label">Latitude</span>
+            <span id="lat" class="value">0.00</span>
+        </div>
+        <div class="stat">
+            <span class="label">Longitude</span>
+            <span id="lon" class="value">0.00</span>
+        </div>
+        <div class="stat">
+            <span class="label">Orbit Velocity</span>
+            <span id="vel" class="value">0</span> <span class="label">km/h</span>
+        </div>
+
+        <div class="stat">
+            <span class="label">Mission</span>
+            <span class="value" style="font-size: 1em; display: block; margin-top: 5px;">
+                <a href="{{ url_for('astronauts') }}" style="text-decoration: none;">
+                    <button style="cursor: pointer; background: #00d4ff; border: none; padding: 5px 15px; font-weight: bold; font-family: inherit;">
+                        VIEW CREW
+                    </button>
+                </a>
+            </span>
+        </div>
+        </div>
+
+    <script>
+        function updateStats() {
+            fetch('/telemetry')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('lat').innerText = data.lat.toFixed(4);
+                    document.getElementById('lon').innerText = data.lon.toFixed(4);
+                    document.getElementById('vel').innerText = Math.round(data.vel).toLocaleString();
+                })
+                .catch(err => console.error("Telemetry stopped or failed:", err));
+        }
+        
+        // Update every 5 seconds
+        let interval = setInterval(updateStats, 5000);
+        updateStats(); // Initial call
+    </script>
+</body>
+</html>

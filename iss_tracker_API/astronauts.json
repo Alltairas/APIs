@@ -1,0 +1,9 @@
+{
+    "number": 4,
+    "people": [
+        {"name": "Commander AJack Hathaway", "role": "Pilot", "image_file": "astro1.jpg"},
+        {"name": "Sophie Adenot", "role": "Mission specialist", "image_file": "astro3.jpg"},
+        {"name": "Andrei Fedyaev", "role": "Mission specialist", "image_file": "astro2.jpg"},
+        {"name": "Jessica Meir", "role": "Commander", "image_file": "astro4.jpg"}
+    ]
+}

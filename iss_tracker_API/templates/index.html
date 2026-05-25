@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISS Tracker - Live</title>
+    <style>
+        /* Reverted to your preferred Banner Layout */
+        body { margin: 0; padding: 0; height: 100vh; width: 100vw; overflow: hidden; font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: white; position: relative; }
+        .map-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+        .dashboard {
+            position: absolute; bottom: 5%; left: 0; width: 100%; height: 20vh;
+            background: rgba(34, 34, 34, 0.85); border-top: 3px solid rgba(68, 68, 68, 0.85);
+            display: flex; justify-content: space-around; align-items: center;
+            z-index: 1000; backdrop-filter: blur(5px);
+        }
+        .stat { text-align: center; }
+        .value { display: block; font-size: 2em; color: #00d4ff; font-weight: bold; }
+        .label { font-size: 0.8em; text-transform: uppercase; color: #888; letter-spacing: 1px; }
+        .instruction-box { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); z-index: 999; background: rgba(0, 0, 0, 0.8); padding: 10px 25px; border-radius: 30px; pointer-events: none; font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.5); border: 1px solid #444; }
+    </style>
+</head>
+<body>
+
+    <div class="map-container">
+        <div class="instruction-box">Click on the "view crew" button to see the current astronauts of the ISS!</div>
+        {{ map_div|safe }}
+    </div>
+
+    <div class="dashboard">
+        <div class="stat">
+            <span class="label">Latitude</span>
+            <span id="lat" class="value">0.00</span>
+        </div>
+        <div class="stat">
+            <span class="label">Longitude</span>
+            <span id="lon" class="value">0.00</span>
+        </div>
+        <div class="stat">
+            <span class="label">Orbit Velocity</span>
+            <span id="vel" class="value">0</span> <span class="label">km/h</span>
+        </div>
+        <div class="stat">
+            <span class="label">Mission</span>
+            <span class="value" style="font-size: 1em; display: block; margin-top: 5px;">
+                <a href="{{ url_for('astronauts') }}" style="text-decoration: none;">
+                    <button style="cursor: pointer; background: #00d4ff; border: none; padding: 5px 15px; font-weight: bold; font-family: inherit;">
+                        VIEW CREW
+                    </button>
+                </a>
+            </span>
+        </div>
+    </div>
+
+    <script>
+        // Clean up data when window closes
+        window.addEventListener("beforeunload", function() {
+            navigator.sendBeacon("/reset_trace");
+        });
+
+        // Simple Dashboard Update Loop
+        function updateStats() {
+            fetch('/telemetry')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('lat').innerText = data.lat.toFixed(4);
+                    document.getElementById('lon').innerText = data.lon.toFixed(4);
+                    document.getElementById('vel').innerText = Math.round(data.vel).toLocaleString();
+                })
+                .catch(err => console.error("Telemetry error:", err));
+        }
+        
+        setInterval(updateStats, 5000);
+        updateStats(); 
+    </script>
+</body>
+</html>
