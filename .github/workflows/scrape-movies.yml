@@ -1,0 +1,36 @@
+name: Scrape Strasbourg showtimes
+
+on:
+  schedule:
+    # ~07:00 / 13:00 / 19:00 Europe/Paris (UTC+1/+2 depending on DST) — adjust as you like
+    - cron: '0 5,11,17 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+        working-directory: movie_seanses
+
+      - name: Run scraper
+        run: python scraper.py
+        working-directory: movie_seanses
+
+      - name: Publish matches.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f movie_seanses/matches.json
+          git diff --quiet --cached || git commit -m "Update showtimes [skip ci]"
+          git push
